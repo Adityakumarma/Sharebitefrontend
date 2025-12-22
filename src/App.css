@@ -1,0 +1,14 @@
+@import "tailwindcss";
+*{
+    font-family: "Oswald", sans-serif;
+
+
+    
+    
+}
+:root {
+  --green: #84994F;
+  --bg : #FFE797;
+  --orange : #FCB53B;
+  --red : #A72703;
+}
