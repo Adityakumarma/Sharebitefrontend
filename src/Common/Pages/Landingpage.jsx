@@ -117,7 +117,7 @@ function Landingpage() {
                 <div className="flex gap-4">
                   <div className=" w-8 h-8 bg-(--green) text-white rounded-full flex items-center justify-center">1</div>
                   <div className='mb-4'>
-                    <h4 className="mb-1">Register & Verify</h4>
+                    <h4 className="mb-1">Register </h4>
                     <p className="text-sm text-gray-600">Create your account as a restaurant or individual donor</p>
                   </div>
                 </div>
