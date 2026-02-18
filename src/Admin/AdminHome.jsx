@@ -298,6 +298,7 @@ const donorsCount = userslistDetails.filter(item => item.role == "donor").length
                 <th className="py-3 px-10">Donor</th>
                 <th className="py-3 px-10">Quantity</th>
                 <th className="py-3 px-10">Location</th>
+                <th className="py-3 px-10">Contact</th>
                 <th className="py-3 px-10">Status</th>
                 <th className="py-3 px-10">Claimed By</th>
               </tr>
@@ -309,6 +310,7 @@ const donorsCount = userslistDetails.filter(item => item.role == "donor").length
                   <td className="py-3 px-8">{item.userMail}</td>
                   <td className="py-3 px-8 ">{item.quantity}</td>
                   <td className="py-3 px-8  text-gray-600">{item.pickupaddress}</td>
+                  <td className="py-3 px-8 ">{item.contactnumber}</td>
                   <td className="py-3 px-8"> <div className=' bg-gray-300 px-3 rounded-2xl w-20 ms-3 p-2 text-(--green) '>{item.status}</div></td>
                   <td className='px-8'>{item.claimedBy ? item.claimedBy : <span className='text-red-600' >None Claimed</span>}</td>
                 </tr>
