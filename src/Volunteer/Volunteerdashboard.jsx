@@ -197,7 +197,7 @@ function Volunteerdashboard() {
           {availabledonation &&
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-12'>
               {available.map(item => (
-                <div className="border rounded-xl overflow-hidden shadow-md bg-white ">
+                <div className="border rounded-xl overflow-hidden shadow-md bg-white w-85 ">
                   <img
                     src={`${serverURL}/imguploads/${item.uploadImages[0]}`}
                     alt=""
