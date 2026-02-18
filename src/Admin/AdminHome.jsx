@@ -289,7 +289,7 @@ const donorsCount = userslistDetails.filter(item => item.role == "donor").length
           </div>}
 
         {alldonationsbutton && 
-        <div className='border p-7 mt-8 rounded-2xl w-350 m-10 shadow-2xl ms-12'>
+        <div className='border p-7 mt-8 rounded-2xl w-310 m-10 shadow-2xl ms-12'>
           <h1 className='text-3xl'>All Donations</h1>
           <p className='text-gray-600 mb-14'>Manage all donation activity</p>
           <table >
