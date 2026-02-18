@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaBoxOpen } from 'react-icons/fa6'
 import { IoIosTrendingUp } from 'react-icons/io'
 import { TiTick } from 'react-icons/ti'
-import { CiLocationOn } from 'react-icons/ci'
+import { CiLocationOn, CiPhone } from 'react-icons/ci'
 import { BsClock } from 'react-icons/bs'
 import ModHeader from '../Common/Components/ModHeader'
 import { addDonationAPI, getAllDonationsAPI } from '../services/allAPI'
@@ -284,6 +284,9 @@ function Donordashboard() {
                                             <CiLocationOn /> <span>{item.pickupaddress}</span>
                                         </div>
                                         <div className="flex items-center gap-2">
+                                            <CiPhone /> <span>{item.contactnumber}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
                                             <BsClock /> <span>Pick By : {new Date(item.pickuptime).toLocaleString()}</span>
                                         </div>
                                         <hr className='mt-3 mb-1' />
@@ -326,6 +329,9 @@ function Donordashboard() {
                                             <CiLocationOn /> <span>{item.pickupaddress}</span>
                                         </div>
                                         <div className="flex items-center gap-2">
+                                            <CiPhone /> <span>{item.contactnumber}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
                                             <BsClock /> <span>Pick By : {new Date(item.pickuptime).toLocaleString()}</span>
                                         </div>
                                     </div>
@@ -362,6 +368,9 @@ function Donordashboard() {
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <CiLocationOn /> <span>{item.pickupaddress}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <CiPhone /> <span>{item.contactnumber}</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <BsClock /> <span>Pick By : {new Date(item.pickuptime).toLocaleString()}</span>
@@ -404,6 +413,9 @@ function Donordashboard() {
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <CiLocationOn /> <span>{item.pickupaddress}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <CiPhone /> <span>{item.contactnumber}</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <BsClock /> <span>Pick By : {new Date(item.pickuptime).toLocaleString()}</span>
