@@ -29,6 +29,7 @@ function Donordashboard() {
         description: "",
         pickuptime: "",
         pickupaddress: "",
+        contactnumber:"",
         uploadImages: []
     })
     // console.log(donationDetails);
@@ -39,6 +40,7 @@ function Donordashboard() {
             description: "",
             pickuptime: "",
             pickupaddress: "",
+            contactnumber : "",
             uploadImages: []
         })
         setPreview("")
@@ -79,8 +81,8 @@ function Donordashboard() {
     // console.log(preview);
 
     const handleAddDonations = async () => {
-        const { foodtype, quantity, description, pickuptime, pickupaddress, uploadImages } = donationDetails
-        if (!foodtype || !quantity || !description || !pickuptime || !pickupaddress || uploadImages.length == 0) {
+        const { foodtype, quantity, description, pickuptime, pickupaddress,contactnumber, uploadImages } = donationDetails
+        if (!foodtype || !quantity || !description || !pickuptime || !pickupaddress ||!contactnumber || uploadImages.length == 0) {
             Swal.fire({
                 title: "fill form Completely!",
                 icon: "info"
@@ -97,6 +99,8 @@ function Donordashboard() {
             reqBody.append("description", description)
             reqBody.append("pickuptime", pickuptime)
             reqBody.append("pickupaddress", pickupaddress)
+            reqBody.append("contactnumber", contactnumber)
+
 
             uploadImages.forEach(img => {
                 reqBody.append("uploadImages", img)
@@ -453,6 +457,10 @@ function Donordashboard() {
                                         <div className='mt-3'>
                                             <label htmlFor="">Pickup Address :</label> <br />
                                             <input value={donationDetails.pickupaddress} onChange={(e) => setDonationDetails({ ...donationDetails, pickupaddress: e.target.value })} className='w-95 shadow h-8 ' type="text" placeholder='address' />
+                                        </div>
+                                        <div className='mt-3'>
+                                            <label htmlFor="">Contact Number :</label> <br />
+                                            <input value={donationDetails.contactnumber} onChange={(e) => setDonationDetails({ ...donationDetails, contactnumber: e.target.value })} className='w-95 shadow h-8 ' type="text" placeholder='contact' />
                                         </div>
                                         <div className='mt-3'>
                                             {preview ?
